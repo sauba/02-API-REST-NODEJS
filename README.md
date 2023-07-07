@@ -13,8 +13,8 @@ Rocketseat Ignite NodeJS Project 02
 
 #RNF
 
-[x] - The transaction should be the type of 'credit' or 'debit';
+[ x ] - The transaction should be the type of 'credit' or 'debit';
 
-[x] - It should be able to identify de user that have make de transaction;
+[ x ] - It should be able to identify de user that have make de transaction;
 
-[x] - User should only be able to view transactions that he made;
+[ x ] - User should only be able to view transactions that he made;
