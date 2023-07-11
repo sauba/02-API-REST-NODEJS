@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engine": {
+  "engines": {
     "node": "18"
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex migrate:latest",
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "migrate:create": "npm run knex -- migrate:make --migrations-directory ./src/db/migrations -x ts",
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest",
     "build": "tsup src --out-dir build"
